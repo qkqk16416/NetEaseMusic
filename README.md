@@ -84,3 +84,4 @@ https://github.com/Binaryify/NeteaseCloudMusicApi
 - 解决退出登录不退回首页的bug,部分页面图片懒加载
 - 新增了部分图片懒加载，去除部分不合理的骨架，更改了组件使用的规范性
 - 以及更改vue3 + ts版本重构中发现的bug
+- 修复线上预览地址不能正常预览功能的问题
