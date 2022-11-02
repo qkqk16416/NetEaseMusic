@@ -69,7 +69,6 @@ export default {
                 message:
                     `<section>部分功能需要登录后才能使用，如每日推荐等，点击头像可以登录,建议使用二维码登录</section>
                     <br/>
-                    <section>点击访问<a style="margin:0 10px" href="https://gitee.com/crazybox521/vue-music" target="_blank">Gitee</a><a href="https://github.com/crazybox521/vue-NetEasyMusic" target="_blank">GitHub</a></section>
                     `,
                 duration: 0,
                 position: 'top-left'
@@ -125,7 +124,7 @@ export default {
         try {
             const res = await getIp()
             let arr = res.data.match(/[0-9]+(\.[0-9]+)+/)
-            let ip =arr?arr[0]:''
+            let ip = arr ? arr[0] : ''
             console.log(ip);
             commit('setIp', ip)
         } catch (error) {

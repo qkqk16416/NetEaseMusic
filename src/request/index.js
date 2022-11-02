@@ -1,5 +1,6 @@
 import axios from "axios";
 axios.defaults.timeout = 10000
+axios.defaults.baseURL = '/api'
 import store from "@/store";
 /* 项目大部分为get请求，封装一个统一的处理错误、传递参数和url的get方法 */
 function handleError(error) {

@@ -4,7 +4,12 @@ const resolve = dir => path.join(__dirname, dir);
 
 module.exports = {
     devServer: {
-        proxy: 'http://localhost:3000'
+        proxy: {
+            '/api': {
+                target: 'http://cloud-music.pl-fe.cn/',
+                pathRewrite: { '^/api': '' }
+            }
+        }
     },
 
     chainWebpack: config => {
